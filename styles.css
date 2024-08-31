@@ -1,17 +1,50 @@
+/* Font Definitions */
+@font-face {
+  font-family: 'Phantom Sans';
+  src: url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Regular.woff')
+      format('woff'),
+    url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Regular.woff2')
+      format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Phantom Sans';
+  src: url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Italic.woff')
+      format('woff'),
+    url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Italic.woff2')
+      format('woff2');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Phantom Sans';
+  src: url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Bold.woff')
+      format('woff'),
+    url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Bold.woff2')
+      format('woff2');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* General Styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Phantom Sans', sans-serif;
 }
 
 body {
-    background-color: #f9f9f9;
-    color: #333;
+    background-color: #0a0a0a;
+    color: #fff;
 }
 
 header {
-    background-color: #1a1a1a;
+    background-color: #ec3750; /* Red */
     color: #fff;
     display: flex;
     justify-content: space-between;
@@ -41,13 +74,13 @@ nav ul li {
 nav ul li a {
     color: #fff;
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .hero {
     text-align: center;
-    background-color: #00467f;
-    color: #fff;
+    background-color: #ff8c37; /* Orange */
+    color: #0a0a0a;
     padding: 3rem 1rem;
 }
 
@@ -62,12 +95,12 @@ nav ul li a {
 }
 
 .cta {
-    background-color: #ff4b4b;
+    background-color: #33d6a6; /* Green */
     color: #fff;
     padding: 0.8rem 1.5rem;
     text-decoration: none;
     border-radius: 5px;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .about, .projects {
@@ -78,6 +111,7 @@ nav ul li a {
 .about h2, .projects h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
+    color: #338eda; /* Blue */
 }
 
 .project-grid {
@@ -87,7 +121,7 @@ nav ul li a {
 }
 
 .project-card {
-    background-color: #e0e0e0;
+    background-color: #1a1a1a;
     padding: 1rem;
     border-radius: 5px;
     width: 200px;
@@ -96,6 +130,8 @@ nav ul li a {
     justify-content: center;
     align-items: center;
     font-weight: bold;
+    color: #ec3750; /* Red */
+    border: 2px solid #ec3750; /* Red */
 }
 
 footer {
@@ -110,7 +146,7 @@ footer p {
 }
 
 .social-media a {
-    color: #fff;
+    color: #8492a6; /* Muted */
     margin: 0 10px;
     text-decoration: none;
 }
