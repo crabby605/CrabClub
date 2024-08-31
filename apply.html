@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply - CrabClub</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Specific styles for the Apply page */
+        .apply-page {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #0a0a0a;
+            color: #fff;
+            padding: 2rem;
+        }
+
+        .apply-page h2 {
+            font-size: 2.5rem;
+            color: #ff8c37; /* Orange */
+            margin-bottom: 1rem;
+        }
+
+        .apply-page p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .apply-form {
+            background-color: #1a1a1a;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            max-width: 600px;
+            width: 100%;
+        }
+
+        .apply-form label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+
+        .apply-form input {
+            width: calc(100% - 2rem);
+            padding: 0.5rem;
+            border: 1px solid #8492a6; /* Muted */
+            border-radius: 5px;
+            margin-bottom: 1rem;
+            color: #fff;
+            background-color: #333;
+        }
+
+        .apply-form button {
+            background-color: #33d6a6; /* Green */
+            color: #fff;
+            padding: 1rem;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            font-size: 1.2rem;
+        }
+
+        .apply-form button:hover {
+            background-color: #28a57a; /* Darker Green */
+        }
+
+        .slack-link {
+            margin-top: 2rem;
+            font-size: 1rem;
+        }
+
+        .slack-link a {
+            color: #338eda; /* Blue */
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <!-- Hack Club Banner -->
+    <a href="https://hackclub.com/">
+        <img style="position: absolute; top: 0; left: 10px; border: 0; width: 256px; z-index: 999;" 
+             src="https://assets.hackclub.com/flag-orpheus-top.svg" alt="Hack Club"/>
+    </a>
+
+    <!-- Apply Page Content -->
+    <div class="apply-page">
+        <h2>Apply to Join CrabClub</h2>
+        <p>We’re excited to welcome new members to CrabClub! Please fill out the form below to apply. After submitting, you’ll receive more details about joining our community and accessing all the amazing resources we offer.</p>
+        
+        <form action="submit-application.php" method="POST" class="apply-form">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            
+            <button type="submit">Submit Application</button>
+        </form>
+
+        <div class="slack-link">
+            <p>Join our Hack Club Slack community:</p>
+            <a href="https://slack.hackclub.com" target="_blank">Join Slack</a>
+        </div>
+    </div>
+</body>
+</html>
